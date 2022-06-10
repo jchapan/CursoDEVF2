@@ -1,0 +1,87 @@
+.contenedor{
+    border: 3px solid #000;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caja1{
+    width: 200px;
+    height: 200px;
+    border: 3px solid #FF6060;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caja2{
+    width: 200px;
+    height: 200px;
+    border: 3px solid #1400FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cajaHijo{
+    background-color: #FF6060;
+    width: 40%;
+    height: 40%;
+    border: 3px solid #FF6060;
+}
+
+.cajaHija{
+    background-color: #1400FF;
+    width: 40%;
+    height: 40%;
+    border: 3px solid #1400FF;;
+}
+
+/* desde 0 hasta 600px */
+/* SOLO MAX-WIDTH */
+/* @media screen and (max-width: 600px){
+    .contenedor{
+        flex-direction: column;
+    }
+    .caja{
+        background-color: aqua;
+    }
+} */
+
+/* SOLO MIN-WIDTH */
+/*  600px hasta infinito */
+@media screen and (min-width: 600px){
+    .contenedor{
+        flex-direction: row;
+    }
+    .caja1{
+        border: 3px solid #60FF66;
+        flex-direction: column;
+    }
+    .cajaHijo{
+        background-color: #60FF66;
+        border: 3px solid #60FF66;
+    }
+    .caja2{
+        border: 3px solid black;
+    }
+    .cajaHija{
+        background-color: black;
+        border: 3px solid black;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px){
+    .caja1{
+        flex-direction: column;
+    }
+    
+    .caja2{
+        flex-direction: row;
+    }
+}

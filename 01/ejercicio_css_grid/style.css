@@ -1,0 +1,52 @@
+.container{
+    border: 3px solid #000;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hijo-1 hijo-1 hijo-2 hijo-2 hijo-2"
+    "hijo-1 hijo-1 hijo-X hijo-3 hijo-3"
+    "hijo-4 hijo-Y hijo-5 hijo-5 hijo-5"
+    "hijo-4 hijo-Y hijo-5 hijo-5 hijo-5";
+    grid-gap: 20px;
+
+}
+
+.hijo{
+    background-color: aqua;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.hijo-1{
+    background-color: pink;
+    grid-area: hijo-1;
+}
+
+.hijo-2{
+    background-color: pink;
+    grid-area: hijo-2;
+}
+
+.hijo-3{
+    background-color: blue;
+    grid-area: hijo-3;
+}
+
+.hijo-4{
+    background-color: pink;
+    grid-area: hijo-4;
+}
+
+.hijo-5{
+    background-color: pink;
+    grid-area: hijo-5;
+}
+
+.hijo-X{
+    grid-area: hijo-X;
+}
+.hijo-Y{
+    grid-area: hijo-Y;
+}
