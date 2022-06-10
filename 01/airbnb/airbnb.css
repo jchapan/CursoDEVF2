@@ -9,6 +9,7 @@
     align-items: center;
     border-bottom: 1px solid gray;
     height: 80px;
+    background-color: white;
 }
 .nav img{
     height: 33px;
@@ -35,6 +36,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .fotos img{
     height: 300px;
